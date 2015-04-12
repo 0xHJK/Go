@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, minimum-scale=1 , maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta name="Keywords" content="工大校车,精弘导航,浙江工业大学,网址大全,校车时刻,工大黄页,微信集锦,精弘网络,精弘,精弘论坛,工大助手,精弘网盘,工大圈圈">
+  <meta name="Author" content="HJK">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <title>工大校车</title>
+  <!--[if lt IE 7]>
+  <script>
+    if(confirm("关爱前端程序员，从我做起。人人献出一点爱，世界将变成美好人间。请点击确定使用Chrome浏览器:-)，或者点击取消强行浏览:-(")){
+      window.open("http://pan.zjut.com/public.php?service=files&t=dc6574ce9ff223f3bf7506cd6ad8e9d3&download");
+    }
+  </script>
+  <![endif]-->
+  <link rel="stylesheet" href="./style.css">
+  <!--[if lt IE 9]>
+  <style type="text/css">
+    .column3 { width:16.6666666667%; }
+    .column4 { width:16.6666666667%; }
+    .column5 { width:20%; }
+    .portrait { display:none; }
+    .landscape { display:block; }
+  </style>
+  <![endif]-->
+  <!--[if lte IE 7]>
+  <style type="text/css">
+    .column3 { width:16.5%; }
+    .column4 { width:16.5%; }
+    .subtitle { border-bottom:solid 1px #EbEbEb; }
+    .nav-item {height:40px; width:24%;}
+  </style>
+  <![endif]-->
+</head>
+<body>
+  <div class="nav-bar">
+    <ul id="nav-list" class="nav-list">
+      <li class="nav-item"><a href="./index.html">精弘导航</a></li>
+      <li class="nav-item active"><a href="#">校车时刻</a></li>
+      <li class="nav-item"><a href="javascript:void(0);" onclick="notYet();">工大黄页</a></li>
+      <li class="nav-item"><a href="javascript:void(0);" onclick="notYet();">微信集锦</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <div id="to-zh" class="block">
+      <div class="title">
+        <span class="shape">&nbsp;</span>屏峰&rArr;朝晖
+        <span><a href="#to-pf" class="blue small">&nbsp;&nbsp;&nbsp;&nbsp;（点击换向）</a></span>
+        <span><a href="javascript:void(0);" onclick="feedback();" class="red small right">反馈错误&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
+      </div>
+      <div class="subtitle"><span class="dot">&nbsp;</span>工作日</div>
+      <table class="ulc ulb">
+        <tr>
+          <td class="column5"><strong>发车时间</strong></td>
+          <td class="column5"><strong>起点</strong></td>
+          <td class="column5"><strong>终点</strong></td>
+          <td class="column5"><strong>线路</strong></td>
+          <td class="column5"><strong>车辆</strong></td>
+        </tr>
+        <tr>
+          <td class="column5">6:40</td>
+          <td class="column5">翰墨香林</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5"><a href="#line">六号线</a></td>
+          <td class="column5">客车2辆</td>
+        </tr>
+        <tr>
+          <td class="column5">7:40</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5">直达</td>
+          <td class="column5">客车2辆</td>
+        </tr>
+        <tr>
+          <td class="column5" rowspan="2">10:00</td>
+          <td class="column5" rowspan="2">语林楼</td>
+          <td class="column5" rowspan="2">邵科馆</td>
+          <td class="column5"><a href="#line">一号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5"><a href="#line">二号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5">11:00</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5"><a href="#line">三号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5" rowspan="3">12:00</td>
+          <td class="column5" rowspan="3">语林楼</td>
+          <td class="column5" rowspan="3">邵科馆</td>
+          <td class="column5">直达</td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5"><a href="#line">一号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5"><a href="#line">二号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5">13:10</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5"><a href="#line">三号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5">14:30</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5">直达</td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5" rowspan="2">15:30</td>
+          <td class="column5" rowspan="2">语林楼</td>
+          <td class="column5" rowspan="2">邵科馆</td>
+          <td class="column5"><a href="#line">一号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5"><a href="#line">二号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5" rowspan="3">16:30</td>
+          <td class="column5" rowspan="3">语林楼</td>
+          <td class="column5">东新园</td>
+          <td class="column5"><a href="#line">五号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5" rowspan="2">邵科馆</td>
+          <td class="column5">直达</td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5"><a href="#line">二号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5" rowspan="2">17:30</td>
+          <td class="column5" rowspan="2">语林楼</td>
+          <td class="column5" rowspan="2">邵科馆</td>
+          <td class="column5"><a href="#line">一号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5"><a href="#line">二号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5">20:30</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5"><a href="#line">三号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5">21:30</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5"><a href="#line">三号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5">22:00</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5"><a href="#line">三号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+      </table>
+      <div class="subtitle"><span class="dot">&nbsp;</span>节假日</div>
+      <table class="ulc ulb">
+        <tr>
+          <td class="column5"><strong>发车时间</strong></td>
+          <td class="column5"><strong>起点</strong></td>
+          <td class="column5"><strong>终点</strong></td>
+          <td class="column5"><strong>线路</strong></td>
+          <td class="column5"><strong>车辆</strong></td>
+        </tr>
+        <tr>
+          <td class="column5">7:45</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5">直达</td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5">8:30</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5"><a href="#line">三号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5" rowspan="2">12:30</td>
+          <td class="column5" rowspan="2">语林楼</td>
+          <td class="column5" rowspan="2">邵科馆</td>
+          <td class="column5"><a href="#line">一号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5"><a href="#line">二号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5" rowspan="2">16:30</td>
+          <td class="column5" rowspan="2">语林楼</td>
+          <td class="column5" rowspan="2">邵科馆</td>
+          <td class="column5"><a href="#line">一号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5"><a href="#line">二号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5" rowspan="2">20:30</td>
+          <td class="column5" rowspan="2">语林楼</td>
+          <td class="column5" rowspan="2">邵科馆</td>
+          <td class="column5"><a href="#line">一号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5"><a href="#line">二号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5" rowspan="2">22:00</td>
+          <td class="column5" rowspan="2">语林楼</td>
+          <td class="column5" rowspan="2">邵科馆</td>
+          <td class="column5"><a href="#line">一号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5"><a href="#line">二号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+      </table>
+    </div>
+    <div id="to-pf" class="block">
+      <div class="title">
+        <span class="shape">&nbsp;</span>朝晖&rArr;屏峰
+        <span><a href="#to-zh" class="blue small">&nbsp;&nbsp;&nbsp;&nbsp;（点击换向）</a></span>
+      </div>
+      <div class="subtitle"><span class="dot">&nbsp;</span>工作日</div>
+      <table class="ulc ulb">
+        <tr>
+          <td class="column5"><strong>发车时间</strong></td>
+          <td class="column5"><strong>起点</strong></td>
+          <td class="column5"><strong>终点</strong></td>
+          <td class="column5"><strong>线路</strong></td>
+          <td class="column5"><strong>车辆</strong></td>
+        </tr>
+        <tr>
+          <td class="column5">6:40</td>
+          <td class="column5">东新园</td>
+          <td class="column5">语林楼</td>
+          <td class="column5"><a href="#line">五号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5" rowspan="3">6:50</td>
+          <td class="column5" rowspan="2">邵科馆</td>
+          <td class="column5" rowspan="3">语林楼</td>
+          <td class="column5">直达</td>
+          <td class="column5">客车2辆</td>
+        </tr>
+        <tr>
+          <td class="column5"><a href="#line">二号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5">省委党校</td>
+          <td class="column5"><a href="#line">四号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5" rowspan="2">8:20</td>
+          <td class="column5" rowspan="2">邵科馆</td>
+          <td class="column5" rowspan="2">语林楼</td>
+          <td class="column5"><a href="#line">一号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5"><a href="#line">二号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5">9:00</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">直达</td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5">11:00</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">直达</td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5" rowspan="3">12:20</td>
+          <td class="column5" rowspan="3">邵科馆</td>
+          <td class="column5" rowspan="3">语林楼</td>
+          <td class="column5">直达</td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5"><a href="#line">一号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5"><a href="#line">二号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5">14:00</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">直达</td>
+          <td class="column5">客车3辆</td>
+        </tr>
+        <tr>
+          <td class="column5">15:30</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">直达</td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5">16:30</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">直达</td>
+          <td class="column5">客车2辆</td>
+        </tr>
+        <tr>
+          <td class="column5" rowspan="2">17:10</td>
+          <td class="column5" rowspan="2">邵科馆</td>
+          <td class="column5">语林楼</td>
+          <td class="column5"><a href="#line">一号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5">翰墨香林</td>
+          <td class="column5"><a href="#line">六号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5">20:30</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">直达</td>
+          <td class="column5">客车1辆</td>
+        </tr>
+      </table>
+      <div class="subtitle"><span class="dot">&nbsp;</span>节假日</div>
+      <table class="ulc ulb">
+        <tr>
+          <td class="column5"><strong>发车时间</strong></td>
+          <td class="column5"><strong>起点</strong></td>
+          <td class="column5"><strong>终点</strong></td>
+          <td class="column5"><strong>线路</strong></td>
+          <td class="column5"><strong>车辆</strong></td>
+        </tr>
+        <tr>
+          <td class="column5" rowspan="2">7:00</td>
+          <td class="column5" rowspan="2">邵科馆</td>
+          <td class="column5" rowspan="2">语林楼</td>
+          <td class="column5"><a href="#line">一号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5"><a href="#line">二号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5" rowspan="2">8:45</td>
+          <td class="column5" rowspan="2">邵科馆</td>
+          <td class="column5" rowspan="2">语林楼</td>
+          <td class="column5"><a href="#line">一号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5"><a href="#line">二号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5">12:20</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5">语林楼</td>
+          <td class="column5"><a href="#line">一号线</a></td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5">15:30</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">直达</td>
+          <td class="column5">客车1辆</td>
+        </tr>
+        <tr>
+          <td class="column5">18:00</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">直达</td>
+          <td class="column5">客车2辆</td>
+        </tr>
+        <tr>
+          <td class="column5">21:15</td>
+          <td class="column5">邵科馆</td>
+          <td class="column5">语林楼</td>
+          <td class="column5">直达</td>
+          <td class="column5">客车2辆</td>
+        </tr>
+      </table>
+    </div>
+    <div id="line" class="block">
+      <div class="title">
+        <span class="shape">&nbsp;</span>线路和站点
+        <span><a href="#to-zh" class="blue small">&nbsp;&nbsp;&nbsp;&nbsp;屏峰&rArr;朝晖</a></span>
+        <span><a href="#to-pf" class="blue small">&nbsp;&nbsp;&nbsp;&nbsp;朝晖&rArr;屏峰</a></span>
+      </div>
+      <div class="subtitle"><span class="dot">&nbsp;</span>一号线</div>
+      <table class="ulc ulb">
+        <tr>
+          <td class="column4">屏峰--朝晖</td>
+          <td class="txt-left">语林楼、府苑新村车站、高教新村、雅仕苑车站、益乐路口车站、物美超市、杭师大、省委党校、德胜路东粮泊巷口、南大门、邵科馆</td>
+        </tr>
+        <tr>
+          <td class="column4">朝晖--屏峰</td>
+          <td class="txt-left">邵科馆、德胜路东粮泊巷口、省委党校、杭师大、物美超市、益乐路口车站、雅仕苑车站、高教新村、语林楼</td>
+        </tr>
+      </table>
+      <div class="subtitle"><span class="dot">&nbsp;</span><a href="#line">二号线</a></div>
+      <table class="ulc ulb">
+        <tr>
+          <td class="column4">屏峰--朝晖</td>
+          <td class="txt-left">语林楼、留和路北口、府苑新村车站、古墩路金欣花园、丰潭路口车站、丰潭路文二西路口车站、文二西路东口车站、节能公司车站、团校车站、文二路口车站、朝晖九区车站、南大门、邵科馆</td>
+        </tr>
+        <tr>
+          <td class="column4">朝晖--屏峰</td>
+          <td class="txt-left">邵科馆、市交擎支队车站、文三路口车站、上宁桥车站、古荡新村西车站、丰潭路口车站、古墩路金欣花园、平安桥车站、留和路北口、语林楼</td>
+        </tr>
+      </table>
+      <div class="subtitle"><span class="dot">&nbsp;</span><a href="#line">三号线</a></div>
+      <table class="ulc ulb">
+        <tr>
+          <td class="column4">屏峰--朝晖</td>
+          <td class="txt-left">语林楼、府苑新村车站、高教新村、文二西路丰潭路口车站、文二西路东口车站、团校车站、文二路口车站、朝晖九区车站、南大门、邵科馆</td>
+        </tr>
+        <tr>
+          <td class="column4">朝晖--屏峰</td>
+          <td class="txt-left">邵科馆、德胜路东粮泊巷口、省委党校、杭师大、文二西路东口车站、文二西路丰潭路口车站、雅仕苑车站、高教新村、语林楼</td>
+        </tr>
+      </table>
+      <div class="subtitle"><span class="dot">&nbsp;</span>四号线</div>
+      <table class="ulc ulb">
+        <tr>
+          <td class="column4">城西--屏峰</td>
+          <td class="txt-left">省委党校、杭师大、物美超市、嘉绿苑农贸市场、益乐路口车站、雅仕苑车站、高教新村、语林楼</td>
+        </tr>
+      </table>
+      <div class="subtitle"><span class="dot">&nbsp;</span>五号线</div>
+      <table class="ulc ulb">
+        <tr>
+          <td class="column4">屏峰--东新园</td>
+          <td class="txt-left">语林楼、高教新村、雅仕苑车站、益乐路口车站、物美超市、杭师大、省委党校、德胜路东粮泊巷口、大关小区车站、三塘小区车站、东新路口</td>
+        </tr>
+        <tr>
+          <td class="column4">东新园--屏峰</td>
+          <td class="txt-left">东新园站、三塘小区车站、大关小区车站、德胜路东粮泊巷口、语林楼</td>
+        </tr>
+      </table>
+      <div class="subtitle"><span class="dot">&nbsp;</span>六号线</div>
+      <table class="ulc ulb">
+        <tr>
+          <td class="column4">翰墨香林--朝晖</td>
+          <td class="txt-left">翰墨香林、语林楼、邵科馆</td>
+        </tr>
+        <tr>
+          <td class="column4">朝晖--翰墨香林</td>
+          <td class="txt-left">邵科馆、 语林楼、翰墨香林</td>
+        </tr>
+      </table>
+    </div>
+    <div class="block">
+      <div class="title">
+        <span class="shape">&nbsp;</span>备注
+      </div>
+      <table class="ulb">
+        <tr><td class="txt-left">
+          1、朝晖校区班车在邵科馆始发，南大门不停靠；回朝晖校区的班车先在南大门停靠，终点到邵科馆。
+        </td></tr>
+        <tr><td class="txt-left">
+          2、屏峰校区班车在语林楼始发。工作日18：30前班车从屏峰校区主大门出，往屏峰校区的班车由主大门进校，校内停靠白荡海路，终点到语林楼；工作日18：30后和节假日班车从乌溪江路进出。
+        </td></tr>
+        <tr><td class="txt-left">
+          3、所有人员请随带校园卡（刷卡付费）乘坐交通班车。班车在确保教职工乘坐前提下，有空位时学生可以搭乘。
+        </td></tr>
+        <tr><td class="txt-left">
+          4、各部门同时需在20人以上的用车，必须提前联系另行安排派车，经费自理。
+        </td></tr>
+        <tr><td class="txt-left">
+          <span class="dot">&nbsp;</span>班车服务电话：<a href="tel:85290095">85290095</a>、<a href="tel:13588852993">13588852993</a>（<a href="tel:660811">660811</a>）
+        </td></tr>
+      </table>
+    </div>
+
+    <div class="go-top">
+      <a href="#">返回顶部</a>
+    </div>
+    <div class="footer">
+      <span>Copyright © 2014 <a target="_blank" href="http://www.zjut.com">浙江工业大学-精弘网络</a></span><br>
+      <span>Developed by <a target="_blank" href="http://www.hjk.im">HJK</a></span>
+    </div>
+  </div>
+  <div style="width:0;height:0;font-size:0;display:none;z-index:-1;">
+    <script>
+      function notYet(){
+        alert("功能还在开发中，敬请期待");
+        return false;
+      }
+      function feedback(){
+        alert("请发送邮件到HJK@zjut.com");
+        return false;
+      }
+    </script>
+    <script src="http://s11.cnzz.com/z_stat.php?id=1254746941&web_id=1254746941" language="JavaScript"></script>
+  </div>
+</body>
+</html>
